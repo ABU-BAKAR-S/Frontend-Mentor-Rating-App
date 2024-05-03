@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keyword"
+      content="html,css and javascript,Html,Css and Javascript"
+    />
+    <meta name="description" content="rating app" />
+    <meta name="author" content="Abu Bakar Siddik" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div id="card">
+      <img src="images/icon-star.svg" alt="icon-star" class="star_icon" />
+      <h2 id="card_header">How did we do?</h2>
+      <p id="card_para">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form id="form" action="#" class="formField">
+        <label for="1">
+          <input
+            id="1"
+            type="text"
+            name="one"
+            class="lista"
+            value="1"
+            readonly
+          />
+        </label>
+        <label for="2">
+          <input
+            id="2"
+            type="text"
+            name="two"
+            class="lista"
+            value="2"
+            readonly
+          />
+        </label>
+        <label for="3">
+          <input
+            id="3"
+            type="text"
+            name="three"
+            class="lista"
+            value="3"
+            readonly
+          />
+        </label>
+        <label for="4">
+          <input
+            id="4"
+            type="text"
+            name="four"
+            class="lista"
+            value="4"
+            readonly
+          />
+        </label>
+        <label for="5">
+          <input
+            id="5"
+            type="text"
+            name="five"
+            class="lista"
+            value="5"
+            readonly
+          />
+        </label>
+        <button id="submit_btn" class="btn_submit" type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div id="thank_state">
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="illustration-thank-you"
+        class="thank_img"
+      />
+      <div id="show_rating">
+        You selected <span id="rating_show"></span> out of 5
+      </div>
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+
+    <!-- Thank you state end -->
+    <script src="style.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--veryDarkBlue);
+}
+
+/* card design start here */
+#card {
+  width: 300px;
+  padding: 30px 15px;
+  border-radius: 12px;
+  background: linear-gradient(
+    0deg,
+    rgba(23, 30, 40, 1) 0%,
+    rgb(30, 39, 48) 100%
+  );
+}
+.star_icon {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#card_header {
+  font-weight: 700;
+  margin: 10px auto;
+  color: var(--white);
+}
+#card_para {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: var(--lightGrey);
+}
+.formField {
+  width: 100%;
+  padding-right: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+input {
+  width: 45px;
+  height: 45px;
+  padding: 0.1rem 0 0 0.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  list-style: none;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.96rem;
+  border-radius: 50%;
+  border: none;
+  color: var(--lightGrey);
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  outline: none;
+
+  transition: all 0.2s ease-out;
+}
+input:hover {
+  color: var(--white);
+  background-color: var(--lightGrey);
+}
+
+input:active {
+  color: var(--white);
+  background-color: var(--orange);
+}
+.activeInput {
+  color: var(--white);
+  background-color: var(--lightGrey);
+}
+.btn_submit {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--orange);
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: all 0.2s ease-out;
+}
+.btn_submit:hover {
+  color: var(--orange);
+  background: var(--white);
+}
+/* card design end here */
+
+/* thank you state design start here */
+#thank_state {
+  width: 300px;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 12px;
+  background: linear-gradient(
+    0deg,
+    rgba(23, 30, 40, 1) 0%,
+    rgb(30, 39, 48) 100%
+  );
+  display: none;
+}
+.thank_img {
+  width: 110px;
+}
+#show_rating {
+  width: 180px;
+  padding: 5px 0;
+  margin: 15px auto;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 20px;
+  color: hsl(25, 70%, 50%);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#thank_state h2 {
+  font-weight: 700;
+  margin: 10px auto;
+  color: var(--white);
+}
+#thank_state p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: var(--lightGrey);
+}
+/* thank you state design end here */
+
+@media screen and (min-width: 425px) {
+  #card {
+    width: 340px;
+  }
+  #thank_state {
+    width: 340px;
+  }
+}
